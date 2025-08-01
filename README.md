@@ -1,5 +1,5 @@
 # deep_sort_realtime-imx8mp
-Modified deep_sort_realtime repo to suport on i.MX8 M Plus
+Modified the deep_sort_realtime repo to support on i.MX8 M Plus.
 
 
 ```
