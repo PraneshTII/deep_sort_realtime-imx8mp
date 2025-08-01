@@ -3,11 +3,11 @@ Modified deep_sort_realtime repo to suport on i.MX8 M Plus
 
 
 ```
-Custom Mobilenet tflite inference can be tested by setting four variables:
+Custom MobileNet tflite inference can be tested by setting four variables:
        1. embedder="mobilenet_imx_tflite_npu" and set the 
-       2. set the embedder_wts to the path of mobilenet tflite
-       3. set the embedder_model_name to path of vx_delegate_path ( embedder_model_name is reused internally as vxdelegate path)
-       4. set embedder_gpu=False to ensure NPU execution.
+       2. Set the embedder_wts to the path of the mobilenet tflite
+       3. set the embedder_model_name to path of vx_delegate_path (embedder_model_name is reused internally as vxdelegate path)
+       4. Set embedder_gpu=False to ensure NPU execution.
  
 tracker = DeepSort(
         max_age=30,
@@ -15,10 +15,10 @@ tracker = DeepSort(
         nms_max_overlap=1.0,
         max_cosine_distance=0.3,
         nn_budget=None,
-        embedder="mobilenet_imx_tflite_npu",
-        embedder_wts="/home/scmd/person_tracking_poc/mobilenet_v2-224-140.tflite",
-        embedder_model_name=VX_DELEGATE_PATH,
-        embedder_gpu=False, 
+        embedder="mobilenet_imx_tflite_npu",   # mention the embedder as mobilenet_imx_tflite_npu
+        embedder_wts="/home/scmd/person_tracking_poc/mobilenet_v2-224-140.tflite",  # mention the embedder_wts as path mobilenet tflite file
+        embedder_model_name=VX_DELEGATE_PATH,  # path to the vx delegate path 
+        embedder_gpu=False,                    # enable NPU execution
         bgr=True
     )
 ```
