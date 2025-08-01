@@ -159,4 +159,4 @@ Tests Passed: 2/2
 
 💡 Next step: Integrate with your YOLO detector!
 
-[scmd@nixos:~/deep_sort_realtime-master]$
+[scmd@nixos:~/deep_sort_realtime-imx8mp]$
