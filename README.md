@@ -25,7 +25,7 @@ tracker = DeepSort(
 
 ```
 $cd ~/deep_sort_realtime-imx8mp
-[scmd@nixos:~/deep_sort_realtime-master]$ python deepsort_test.py 
+[scmd@nixos:~/deep_sort_realtime-imx8mp]$ python deepsort_test.py 
 🎯 DeepSORT Standalone Testing Suite
 ============================================================
 🧪 Testing DeepSORT Pipeline with Dummy Data
